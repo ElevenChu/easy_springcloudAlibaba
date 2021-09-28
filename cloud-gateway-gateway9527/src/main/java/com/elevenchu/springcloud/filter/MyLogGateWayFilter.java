@@ -16,7 +16,7 @@ import java.util.Date;
 public class MyLogGateWayFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-    log.info("***********come in "+new Date());
+        log.info("***********come in "+new Date());
         String uname = exchange.getRequest().getQueryParams().getFirst("uname");
         if (uname==null){
             log.info("****用户名为null,非法用户");
