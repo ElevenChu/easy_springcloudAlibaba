@@ -52,6 +52,12 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到-->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
