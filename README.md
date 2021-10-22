@@ -245,4 +245,27 @@ OpenFeign是Spring Cloud在Feign的基础上支持了SpringMVC的注解，如@Re
 
 C（一致性）是所有节点在同一时间看到的数据是一致的;而A(可用性/高可用)的定义是所有的请求都会收到响应
 
+### Nacos与配置中心
+![image](https://user-images.githubusercontent.com/57619422/138378382-a9bd5090-bfbf-4e61-a2fd-3ba9968caa0c.png)
+
+![image](https://user-images.githubusercontent.com/57619422/138378366-422db820-33e7-4b7d-a271-ca881a6d01a9.png)
+
+![image](https://user-images.githubusercontent.com/57619422/138378396-f16c77ee-fcb6-4966-af01-2f0417b18265.png)
+
+### Nacos集群
+![image](https://user-images.githubusercontent.com/57619422/138379140-3ae61202-a3bd-4fa3-858a-f81b0f412895.png)
+
+![image](https://user-images.githubusercontent.com/57619422/138379147-df8284fc-3647-4b22-9710-1ba7eedbb201.png)
+
+
+
+默认Nacos使用嵌入式数据库实现数据的存储（Nacos默认自带的是嵌入式数据库derby）。所以，如果启动多个默认配置下的Nacos节点，数据存储是存在一致性问题的。为了解决这个问题，Nacos采用了集中式存储的方式来支持集群化部署，目前只支持MySQL的存储。
+
+Nacos支持三种部署模式
+
+- 单机模式-用于测试和单机试用。
+- 集群模式-用于生产环境，确保高可用。
+- 多集群模式-用于多数据中心场景。
+
+
 
