@@ -1,6 +1,7 @@
 # easy_springcloudAlibaba
 
 这个仓库是有关springcloud生态体系的简单综合, 分模块,分组件的初步简单使用,是我学习分布式微服务的第一步
+后面会做一个大的项目
 
 
 ## Eureka服务注册与发现中心
